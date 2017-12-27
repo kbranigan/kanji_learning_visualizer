@@ -84,6 +84,16 @@ if (isset($_FILES['userfile']))
 }
 
 ?>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-351485-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-351485-5');
+</script>
 <style>
         .myButton {
     -moz-box-shadow:inset 0px 1px 0px 0px #caefab;
@@ -126,7 +136,7 @@ if (isset($_FILES['userfile']))
     top:1px;
 }
 </style>
-
+</head>
 <center>
 <div style='text-align: center;'>
 <form enctype="multipart/form-data" method="POST">
@@ -142,6 +152,8 @@ if (isset($_FILES['userfile']))
   <br />
   <br />
   Seemingly in all operating systems, this file sits buried in a folder that I would have a fairly hard time guessing.<br />
+  It seems that on some systems the .anki2 file is a zip file.  Currently I don't support this but I hope to add support soon.<br />
+  You could also unzip the file and send the .anki2 file that is inside.<br />
   <br />
   For me (Latest OSX), that's: <b>/Users/kevin/Library/Application Support/Anki2/Kevin/collection.anki2</b><br />
   and (Windows 8.1), that's: <b>C:\Users\kevin\Documents\Anki2\Kevin\collection.anki2</b><br />
