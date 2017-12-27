@@ -14,6 +14,15 @@ if (!is_file("upload_files/$file.js"))
 
 ?>
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-351485-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-351485-5');
+</script>
 <meta http-equiv="content-type"
   content="text/html; charset=UTF-8"> 
 <meta name="google" content="notranslate" />
